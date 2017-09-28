@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorAccent"
+            android:fitsSystemWindows="true">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/map_back"
+                    android:layout_width="33dp"
+                    android:layout_height="35dp" />
+
+                <TextView
+                    android:id="@+id/map_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="온누리 매장위치"
+                    android:textColor="#ffffff"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/market_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <LinearLayout
+                    android:id="@+id/linear_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/marketSeatch_img"
+                        android:layout_width="0dp"
+                        android:layout_height="109dp"
+                        android:layout_weight="4"
+                        android:layout_marginLeft="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/marketName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginTop="5dp"
+                                    android:text=" XX시장"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/marketGps"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:text="xxKm" />
+
+                                <ImageView
+                                    android:id="@+id/mappin"
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:layout_marginTop="7dp"
+                                    android:layout_toLeftOf="@id/marketGps" />
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/location_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/marketAddr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBottom="@id/marketName"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_toRightOf="@id/marketSeatch_img"
+                                    android:text="쥬소 : 서울시 xxx"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#000000"></LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_food"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="음식"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_cow"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="축산"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_clothes"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="의류"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_shoes"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="신발"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_fish"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="수산"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_rice"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="농산"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_msg"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="가공식품"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_appliances"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="가정용품"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_retail"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="기타소매업"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                    <TextView
+                                        android:id="@+id/marketsearch_txt_clean"
+                                        android:layout_width="0dp"
+                                        android:layout_weight="1"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="2dp"
+                                        android:background="@drawable/textview_toggle"
+                                        android:gravity="center"
+                                        android:text="근린생활서비스"
+                                        android:textColor="@color/text_toggle"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/map_location"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:text="가게위치"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

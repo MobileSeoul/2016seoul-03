@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:layout_gravity="center"
+    android:background="#00ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_border2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/faqdetail_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:text="타이틀 받아오기" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e4e4e4"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/faqdetail_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:paddingTop="5dp"
+                android:textSize="13sp"
+                android:layout_height="wrap_content"
+                android:text="여기는 내용을 받아와" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

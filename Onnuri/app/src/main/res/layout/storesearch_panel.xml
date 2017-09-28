@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="325dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:gravity="center|right"
+                android:text="온누리"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center"
+                android:text="매장"
+                android:textColor="@color/colorAccent"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="검색"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|top"
+            android:text="업종을 선택하세요(중복가능)"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txt_food"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="음식"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_cow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="축산"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_clothes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="의류"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_shoes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="신발"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txt_fish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="수산"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_rice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="농산"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="가공식품"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_appliances"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="가정용품"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/txt_retail"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="기타소매업"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_clean"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="2dp"
+                android:background="@drawable/textview_toggle"
+                android:gravity="center"
+                android:text="근린생활서비스"
+                android:textColor="@color/text_toggle"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#cccccc"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="거리선택"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:max="3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="300m"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="1km"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="3km"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="상관없음"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+            android:id="@+id/txt_storesearch"
+            android:layout_width="85dp"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/layout_border"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="검색"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/linear_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/txt_storesearch"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginRight="50dp">
+
+            <ImageView
+                android:id="@+id/onnuri_refresh"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:text="초기화"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:text="닫기"
+            android:layout_toRightOf="@id/txt_storesearch"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>
